@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DoraVitta Consultancy</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <link rel="apple-touch-icon" href="logo.jpg">
+  <meta name="theme-color" content="#CBB682">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="#hero" aria-label="DoraVitta home">
+        <img src="logo.jpg" alt="DoraVitta logo" class="logo-img">
+      </a>
+    </div>
+
+    <nav id="nav">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <main>
+    <!-- HERO / CAROUSEL -->
+    <section id="hero" class="hero">
+      <div class="carousel" id="heroCarousel" aria-roledescription="carousel">
+        <div class="slides" role="list">
+          <div class="slide" role="listitem" data-index="0" aria-hidden="false">
+            <div class="slide-inner">
+              <h1 class="slide-title">Empowering Your Success</h1>
+              <p class="slide-sub">Clarity, strategy and warmth — bespoke consultancy for leaders and founders.</p>
+              <a class="cta-button" href="#contact">Get Started</a>
+            </div>
+          </div>
+
+          <div class="slide" role="listitem" data-index="1" aria-hidden="true">
+            <div class="slide-inner">
+              <h1 class="slide-title">Strategic Business Growth</h1>
+              <p class="slide-sub">We design growth paths rooted in insight — sustainable, measurable and realistic.</p>
+              <a class="cta-button" href="#services">Our Services</a>
+            </div>
+          </div>
+
+          <div class="slide" role="listitem" data-index="2" aria-hidden="true">
+            <div class="slide-inner">
+              <h1 class="slide-title">Developing Leaders & Teams</h1>
+              <p class="slide-sub">Workshops and coaching that build confidence, alignment and impact.</p>
+              <a class="cta-button" href="#portfolio">View Portfolio</a>
+            </div>
+          </div>
+
+          <!-- LOGO SLIDE -->
+          <div class="slide slide-logo-wrap" role="listitem" data-index="3" aria-hidden="true">
+            <div class="slide-inner slide-logo-inner" aria-hidden="false">
+              <img src="logo.jpg" alt="DoraVitta logo" class="slide-logo">
+              <p class="slide-sub" style="margin-top:12px;">DoraVitta — clarity, trust, warmth</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-btn prev" aria-label="Previous slide" onclick="prevSlide()">‹</button>
+        <button class="carousel-btn next" aria-label="Next slide" onclick="nextSlide()">›</button>
+
+        <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Slide dots"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about animate-on-scroll">
+      <h2>About DoraVitta</h2>
+      <p>
+        DoraVitta partners with entrepreneurs and teams to find clarity and craft actionable strategy.
+        We combine market insight with human-centred coaching so decisions are better informed and teams move forward confidently.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-item">
+          <h3>Our Approach</h3>
+          <p>We listen first, then co-design pragmatic roadmaps focused on outcomes, not buzzwords.</p>
+        </div>
+        <div class="about-item">
+          <h3>Values</h3>
+          <p>Clarity, trust and warmth guide every engagement — we hold accountability lightly and results seriously.</p>
+        </div>
+        <div class="about-item">
+          <h3>Who we help</h3>
+          <p>Startups, scale-ups and leaders who seek sustainable growth and better team alignment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services animate-on-scroll">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service-card">
+          <h3>Business Strategy</h3>
+          <p>Market positioning, product–market fit reviews, and 12–24 month growth roadmaps with KPIs.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Personal Coaching</h3>
+          <p>One-to-one leadership coaching for better decision-making, clarity, and presence.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Workshops & Training</h3>
+          <p>Hands-on sessions to align teams around outcomes, communication and execution practices.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Operational Diagnostics</h3>
+          <p>Assessments to remove friction, identify quick wins and prioritise high-impact changes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio animate-on-scroll">
+      <h2>Portfolio</h2>
+      <div class="portfolio-list">
+        <div class="portfolio-card">
+          <h4>Scaling SaaS Product</h4>
+          <p>Helped a B2B SaaS company prioritise features, streamline onboarding and grow MRR by 40% in 9 months.</p>
+        </div>
+
+        <div class="portfolio-card">
+          <h4>Leadership Development</h4>
+          <p>Delivered a 6-week coaching program for senior leaders to improve cross-functional collaboration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials animate-on-scroll">
+      <h2>What clients say</h2>
+      <div class="testimonial-list">
+        <blockquote class="testimonial">
+          <p>"Working with DoraVitta transformed our strategy and gave us the tools to scale sustainably."</p>
+          <cite>— A. Fernandes, CEO</cite>
+        </blockquote>
+
+        <blockquote class="testimonial">
+          <p>"The coaching sessions helped our senior team align around a clear roadmap. Results showed fast."</p>
+          <cite>— L. Grant, COO</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact animate-on-scroll">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="How can we help you?" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <span>&copy; <span id="year"></span> DoraVitta Consultancy</span>
+      <div class="social-links">
+        <a id="linkedin-link" href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a id="twitter-link" href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a id="instagram-link" href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
