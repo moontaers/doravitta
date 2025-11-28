@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="employee.page.title">Employee Counseling — DoraVitta</title>
+
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <meta name="theme-color" content="#CBB682">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html" aria-label="DoraVitta home">
+        <img src="logo.jpg" alt="DoraVitta logo" class="logo-img">
+      </a>
+    </div>
+
+    <nav id="nav" aria-label="Main navigation">
+      <ul id="nav-list">
+        <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
+        <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+        <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="navigation" aria-label="Language switcher">
+        <button id="btn-en" aria-pressed="false">EN</button>
+        <button id="btn-ar" aria-pressed="false">ع</button>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="animate-on-scroll" style="max-width:980px;margin:2rem auto;padding:1rem;">
+      <h1 data-i18n="employee.page.title">Employee Counseling (Employee Recovery)</h1>
+      <p data-i18n="employee.page.lead">Support for employee wellbeing and recovery.</p>
+
+      <h2 data-i18n="employee.section.heading">Service overview</h2>
+      <p data-i18n="employee.section.p1">Our counseling programs help employees recover from stress, burnout or personal difficulties, combining coaching, referral to appropriate specialists and workplace reintegration planning.</p>
+
+      <h2 data-i18n="employee.section.heading2">How we work</h2>
+      <p data-i18n="employee.section.p2">We provide confidential, practical support; managers can make referrals or employees can self-refer. We tailor sessions to the individual's needs and the organisation's policies.</p>
+
+      <p style="margin-top:1.4rem"><a href="index.html" data-i18n="employee.back">← Back to Home</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <span>&copy; <span id="year"></span> <span data-i18n="footer.brand">DoraVitta Consultancy</span></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
