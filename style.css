@@ -3,14 +3,36 @@
   --pastel-blue:#D8EAF2;
   --calm-gold:#CBB682;
   --soft-beige:#F8F5F0;
-  --font-primary:'Montserrat',sans-serif;
-  --font-secondary:'Playfair Display',serif;
+  --font-primary:'NeutraText', 'Montserrat', sans-serif;
+  --font-secondary:'NeutraText', 'Playfair Display', serif;
+  --font-ar:'Noto Sans Arabic', sans-serif;
   --muted:#666;
   --accent:#b2a06a;
 }
 
+/* NeutraText (Neutraface) - local / self-hosted placeholders
+   Place your licensed NeutraText .woff2 files in /fonts/ or update the src paths.
+*/
+@font-face{
+  font-family: 'NeutraText';
+  src: url('/fonts/NeutraText-Text.woff2') format('woff2'),
+       url('/fonts/NeutraText-Text.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family: 'NeutraText';
+  src: url('/fonts/NeutraText-Text-Bold.woff2') format('woff2'),
+       url('/fonts/NeutraText-Text-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 *{box-sizing:border-box}
 
+html,body{height:100%}
 body{
   margin:0;
   font-family:var(--font-primary);
@@ -18,6 +40,11 @@ body{
   color:#222;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
+}
+
+/* If Arabic is active we switch to Arabic font for body text */
+[dir="rtl"] body{
+  font-family: var(--font-ar), var(--font-primary);
 }
 
 /* Header */
@@ -57,6 +84,14 @@ nav a:hover{color:var(--calm-gold)}
 
 .nav-toggle{display:none;background:none;border:none;font-size:1.6rem;color:var(--calm-gold);cursor:pointer}
 
+.header-actions{display:flex;align-items:center;gap:12px}
+
+/* Language switcher */
+.lang-switch button{
+  padding:.35rem .6rem;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer;font-weight:700;
+}
+.lang-switch button.active{background:var(--calm-gold);color:#fff;border-color:var(--calm-gold)}
+
 /* HERO / CAROUSEL */
 .hero{
   background:linear-gradient(135deg,var(--pastel-blue) 60%,var(--soft-beige) 100%);
@@ -76,7 +111,6 @@ nav a:hover{color:var(--calm-gold)}
 }
 
 /* Each slide */
-/* TRANSITION SPEEDS: reduced for quicker feel */
 .slide{
   width:100%;
   display:flex;
@@ -164,6 +198,7 @@ h2{font-family:var(--font-secondary);font-size:2.2rem;color:var(--calm-gold);mar
 .service-list{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}
 .service-card{background:var(--white);border:1.3px solid var(--pastel-blue);border-radius:12px;padding:1.2rem;width:240px;box-shadow:0 6px 18px rgba(216,234,242,0.08);text-align:left}
 .service-card h3{color:var(--calm-gold);font-family:var(--font-secondary);margin-bottom:.6rem}
+.service-card p{color:#333}
 
 /* Portfolio */
 .portfolio-list{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}
@@ -191,7 +226,17 @@ footer{background:var(--white);padding:1.2rem 1.2rem;text-align:center;box-shado
 .animate-on-scroll{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.9,.2,1)}
 .animate-on-scroll.in-view{opacity:1;transform:translateY(0)}
 
-/* Responsive */
+/* RTL adjustments */
+[dir="rtl"] nav ul{direction:rtl}
+[dir="rtl"] header{direction:rtl}
+[dir="rtl"] .logo{flex-direction:row-reverse}
+[dir="rtl"] nav ul{justify-content:flex-end}
+[dir="rtl"] .about-item, [dir="rtl"] .service-card, [dir="rtl"] .portfolio-card, [dir="rtl"] .testimonial{ text-align:right }
+[dir="rtl"] .carousel-btn.prev{right:10px; left:auto}
+[dir="rtl"] .carousel-btn.next{left:10px; right:auto}
+[dir="rtl"] .cta-button{direction:rtl}
+
+/* Mobile */
 @media (max-width:1000px){
   .about-grid{grid-template-columns:repeat(2,1fr)}
   .slides{height:360px}
