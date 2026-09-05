@@ -51,7 +51,7 @@
       "university.back":"← Back to Home",
 
       "employee.page.title":"Employee Counseling — DoraVitta",
-      "employee.page.lead":"Support for employee wellbeing and recovery.",
+      "employee.page.lead":"Support for employee wellbeing .",
       "employee.section.heading":"Service overview",
       "employee.section.p1":"Our counseling programs help employees recover from stress, burnout or personal difficulties, combining coaching, referral to appropriate specialists and workplace reintegration planning.",
       "employee.section.heading2":"How we work",
