@@ -25,7 +25,7 @@
       "hero.logoTag":"DoraVitta — clarity, trust, warmth",
 
       "about.title":"About DoraVitta",
-      "about.lead":"DoraVitta partners with entrepreneurs and teams to find clarity and craft actionable strategy. We combine market insight with human-centred coaching so decisions are better informed and teams move forward confidently.",
+      "about.lead":"DoraVitta partners with entrepreneurs and teams to find clarity and craft actionable strategy. We combine market insight with human-centred coaching so decisions are better inf[...]",
 
       "services.title":"Our Services",
       "services.university.title":"University Consultations",
@@ -45,7 +45,7 @@
       "university.page.title":"University Consultations — DoraVitta",
       "university.page.lead":"Include your university advisor in these sessions.",
       "university.section.heading":"What we do",
-      "university.section.p1":"We run focused consultations that bring your university advisor together with our consultants to align academic guidance with practical strategy and career or research paths.",
+      "university.section.p1":"We run focused consultations that bring your university advisor together with our consultants to align academic guidance with practical strategy and career or resear[...]",
       "university.section.heading2":"How to book",
       "university.section.p2":"Contact us via the Contact form on the homepage and indicate your advisor's details; we will coordinate scheduling and scope together.",
       "university.back":"← Back to Home",
@@ -53,9 +53,9 @@
       "employee.page.title":"Employee Recovery — DoraVitta",
       "employee.page.lead":"Support for employee wellbeing and recovery.",
       "employee.section.heading":"Service overview",
-      "employee.section.p1":"Our counseling programs help employees recover from stress, burnout or personal difficulties, combining coaching, referral to appropriate specialists and workplace reintegration.",
+      "employee.section.p1":"Our counseling programs help employees recover from stress, burnout or personal difficulties, combining coaching, referral to appropriate specialists and workplace rei[...]",
       "employee.section.heading2":"How we work",
-      "employee.section.p2":"We provide confidential, practical support; managers can make referrals or employees can self-refer. We tailor sessions to the individual's needs and the organisation's policies.",
+      "employee.section.p2":"We provide confidential, practical support; managers can make referrals or employees can self-refer. We tailor sessions to the individual's needs and the organisation'[...]",
       "employee.back":"← Back to Home",
 
       "healthy.page.title":"Healthy Living — DoraVitta",
@@ -101,7 +101,7 @@
       "hero.logoTag":"دورافيتا — وضوح، ثقة، دعم",
 
       "about.title":"عن DoraVitta",
-      "about.lead":"⸻\n\n✨ من نحن\n\nنحن منصة استشارات متكاملة نُقدّم تجربة مختلفة في التوجيه وصناعة القرار، نُمكّن الأفراد والفرق من اتخاذ قرارات أفضل مع وضوح وثقة.",
+      "about.lead":"⸻\n\n✨ من نحن\n\nنحن منصة استشارات متكاملة نُقدّم تجربة مختلفة في التوجيه وصناعة القرار، نُمكّن ا�[...]",
 
       "services.title":"خدماتنا",
       "services.university.title":"استشارات جامعية",
@@ -121,9 +121,9 @@
       "university.page.title":"استشارات جامعية — DoraVitta",
       "university.page.lead":"أدرج مستشارك الجامعي ضمن هذه الجلسات.",
       "university.section.heading":"ماذا نفعل",
-      "university.section.p1":"نجري استشارات مركزة تجمع مستشارك الجامعي مع مستشارينا لمواءمة التوجيه الأكاديمي مع الاستراتيجية العملية.",
+      "university.section.p1":"نجري استشارات مركزة تجمع مستشارك الجامعي مع مستشارينا لمواءمة التوجيه الأكاديمي مع الاست[...]",
       "university.section.heading2":"كيفية الحجز",
-      "university.section.p2":"اتصل بنا عبر نموذج التواصل في الصفحة الرئيسية وبيّن بيانات مستشارك؛ سننسق المواعيد ونحدد نطاق العمل معك.",
+      "university.section.p2":"اتصل بنا عبر نموذج التواصل في الصفحة الرئيسية وبيّن بيانات مستشارك؛ سننسق المواعيد ونحدد [...]",
       "university.back":"← العودة إلى الصفحة الرئيسية",
 
       "employee.page.title":"دعم التعافي — DoraVitta",
@@ -131,7 +131,7 @@
       "employee.section.heading":"نظرة عامة على الخدمة",
       "employee.section.p1":"برامجنا الإرشادية تساعد الموظفين على التعافي من الإجهاد، الإرهاق أو الصعوبات الشخصية.",
       "employee.section.heading2":"كيفية العمل معنا",
-      "employee.section.p2":"نقدم دعماً سرياً وعملياً؛ يمكن للمديرين إحالة الحالات أو يمكن للموظفين طلب المساعدة بمبادرتهم الخاصة.",
+      "employee.section.p2":"نقدم دعماً سرياً وعملياً؛ يمكن للمديرين إحالة الحالات أو يمكن للموظفين طلب المساعدة بمباد�[...]",
       "employee.back":"← العودة إلى الصفحة الرئيسية",
 
       "healthy.page.title":"الحياة الصحية — DoraVitta",
@@ -290,5 +290,18 @@
   }
   window.addEventListener('scroll', onScroll);
   onScroll();
+
+  // Contact button: open mail client without submitting form
+  const contactBtn = document.getElementById('contact-submit');
+  if(contactBtn){
+    contactBtn.addEventListener('click', (e) => {
+      // optionally include subject/body from form fields
+      const name = document.getElementById('input-name')?.value || '';
+      const message = document.getElementById('input-message')?.value || '';
+      const subject = encodeURIComponent(name ? `Inquiry from ${name}` : 'Website inquiry');
+      const body = encodeURIComponent(message);
+      window.location.href = `mailto:info@doravitta.com?subject=${subject}&body=${body}`;
+    });
+  }
 
 })();
