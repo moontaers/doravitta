@@ -1,63 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title data-i18n="university.page.title">University Consultations — DoraVitta</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title data-i18n="university.page.title">University Consultations | DoraVitta LLC</title>
   <link rel="icon" type="image/jpeg" href="logo.jpg">
   <meta name="theme-color" content="#CBB682">
-
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="logo">
-      <a href="index.html" aria-label="DoraVitta home">
-        <img src="logo.jpg" alt="DoraVitta logo" class="logo-img">
-      </a>
-    </div>
-
-    <nav id="nav" aria-label="Main navigation">
-      <ul id="nav-list">
-        <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
-        <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
-        <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
-        <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
-      </ul>
-    </nav>
-
+    <div class="logo"><a href="index.html#hero" aria-label="DoraVitta home"><img src="logo.jpg" alt="DoraVitta logo" class="logo-img"></a></div>
+    <nav id="nav" aria-label="Main navigation"><ul id="nav-list">
+      <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
+      <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      <li><a href="policies.html" data-i18n="nav.policies">Policies</a></li>
+      <li><a href="resources.html" data-i18n="nav.resources">Resources</a></li>
+    </ul></nav>
     <div class="header-actions">
-      <div class="lang-switch" role="navigation" aria-label="Language switcher">
-        <button id="btn-en" aria-pressed="false">EN</button>
-        <button id="btn-ar" aria-pressed="false">ع</button>
-      </div>
+      <div class="lang-switch" role="navigation" aria-label="Language switcher"><button id="btn-en" aria-pressed="false">EN</button><button id="btn-ar" aria-pressed="false">ع</button></div>
       <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
     </div>
   </header>
-
   <main>
-    <section class="animate-on-scroll" style="max-width:980px;margin:2rem auto;padding:1rem;">
-      <h1 data-i18n="university.page.title">University Consultations</h1>
-      <p data-i18n="university.page.lead">Include your university advisor in these sessions.</p>
-
-      <h2 data-i18n="university.section.heading">What we do</h2>
-      <p data-i18n="university.section.p1">We run focused consultations that bring your university advisor together with our consultants to align academic guidance with practical strategy and career or research plans.</p>
-
-      <h2 data-i18n="university.section.heading2">How to book</h2>
-      <p data-i18n="university.section.p2">Contact us via the Contact form on the homepage and indicate your advisor's details; we will coordinate scheduling and scope together.</p>
-
-      <p style="margin-top:1.4rem"><a href="index.html" data-i18n="university.back">← Back to Home</a></p>
+    <section class="page-content animate-on-scroll">
+      <h1 data-i18n="university.page.title">University Consultations | DoraVitta LLC</h1>
+      <p class="page-lead" data-i18n="university.page.lead">One-to-one sessions to help students and families plan a university journey with clarity and confidence.</p>
+      <div class="detail-grid">
+        <article class="detail-card"><h2 data-i18n="university.what.title">What the sessions cover</h2><p data-i18n="university.what.body">We help you explore majors and universities, understand admissions requirements, and build a realistic application plan based on your goals and circumstances.</p></article>
+        <article class="detail-card"><h2 data-i18n="university.audience.title">Who it’s for</h2><p data-i18n="university.audience.body">High school students preparing applications, current university students considering their next steps, and parents supporting a student’s decisions.</p></article>
+        <article class="detail-card"><h2 data-i18n="university.how.title">How it works</h2><ol>
+          <li data-i18n="university.how.1">Book by emailing info@doravitta.com.</li>
+          <li data-i18n="university.how.2">We confirm a time and send a secure payment link.</li>
+          <li data-i18n="university.how.3">Meet online for 45 minutes via Zoom or Google Meet.</li>
+          <li data-i18n="university.how.4">Receive a written summary with practical next steps.</li>
+        </ol></article>
+        <article class="detail-card"><h2 data-i18n="university.price.title">Pricing and payment</h2><p data-i18n="university.price.body">$15 per 45-minute session. Secure online card payment; your payment link is sent after booking.</p></article>
+      </div>
+      <p class="booking-cta"><a class="cta-button" href="mailto:info@doravitta.com" data-i18n="university.book">Book by email: info@doravitta.com</a></p>
+      <p><a href="index.html" data-i18n="page.back">← Back to Home</a></p>
     </section>
   </main>
-
-  <footer>
-    <div class="footer-content">
-      <span>&copy; <span id="year"></span> <span data-i18n="footer.brand">DoraVitta LLC</span></span>
-    </div>
-  </footer>
-
+  <footer><div class="footer-content"><span data-i18n="footer.copyright">© DoraVitta LLC. All Rights Reserved.</span><div class="footer-links"><a href="policies.html" data-i18n="nav.policies">Policies</a><a href="resources.html" data-i18n="nav.resources">Resources</a></div></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
