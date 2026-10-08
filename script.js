@@ -74,7 +74,7 @@
       "blog.post3.excerpt":"Practical cues to prepare and run difficult but necessary conversations with care.",
       "blog.readmore":"Read more →",
 
-      "footer.brand":"DoraVitta Consultancy",
+      "footer.brand":"DoraVitta LLC",
       "social.linkedin":"LinkedIn",
       "social.twitter":"Twitter",
       "social.instagram":"Instagram"
