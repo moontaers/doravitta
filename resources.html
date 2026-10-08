@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title data-i18n="resources.page.title">Resources &amp; Downloads | DoraVitta LLC</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <meta name="theme-color" content="#CBB682">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html#hero" aria-label="DoraVitta home"><img src="logo.jpg" alt="DoraVitta logo" class="logo-img"></a></div>
+    <nav id="nav" aria-label="Main navigation"><ul id="nav-list">
+      <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
+      <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      <li><a href="policies.html" data-i18n="nav.policies">Policies</a></li>
+      <li><a href="resources.html" data-i18n="nav.resources">Resources</a></li>
+    </ul></nav>
+    <div class="header-actions">
+      <div class="lang-switch" role="navigation" aria-label="Language switcher"><button id="btn-en" aria-pressed="false">EN</button><button id="btn-ar" aria-pressed="false">ع</button></div>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-content animate-on-scroll">
+      <h1 data-i18n="resources.page.title">Resources &amp; Downloads</h1>
+      <p class="page-lead" data-i18n="resources.page.lead">Browse downloadable materials by language. Resources will be added here as they become available.</p>
+      <div class="resource-groups">
+        <section class="resource-group" aria-labelledby="english-documents">
+          <h2 id="english-documents" data-i18n="resources.english.title">English Documents</h2>
+          <article class="resource-card">
+            <span class="download-icon" aria-hidden="true">⇩</span>
+            <div><h3 data-i18n="resources.empty.title">Documents coming soon</h3><p data-i18n="resources.english.empty">There are no English downloads available yet.</p><span class="language-badge" data-i18n="resources.badge.bilingual">English + Arabic</span></div>
+          </article>
+        </section>
+        <section class="resource-group" aria-labelledby="arabic-documents" lang="ar" dir="rtl">
+          <h2 id="arabic-documents" data-i18n="resources.arabic.title">Arabic Documents</h2>
+          <article class="resource-card">
+            <span class="download-icon" aria-hidden="true">⇩</span>
+            <div><h3 data-i18n="resources.empty.title">Documents coming soon</h3><p data-i18n="resources.arabic.empty">There are no Arabic downloads available yet.</p></div>
+          </article>
+        </section>
+      </div>
+      <p><a href="index.html" data-i18n="page.back">← Back to Home</a></p>
+    </section>
+  </main>
+  <footer><div class="footer-content"><span data-i18n="footer.copyright">© DoraVitta LLC. All Rights Reserved.</span><div class="footer-links"><a href="contact.html" data-i18n="nav.contact">Contact</a><a href="policies.html" data-i18n="nav.policies">Policies</a></div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

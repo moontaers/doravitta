@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title data-i18n="contact.page.title">Contact Us | DoraVitta LLC</title>
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <meta name="theme-color" content="#CBB682">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html#hero" aria-label="DoraVitta home"><img src="logo.jpg" alt="DoraVitta logo" class="logo-img"></a></div>
+    <nav id="nav" aria-label="Main navigation"><ul id="nav-list">
+      <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
+      <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      <li><a href="policies.html" data-i18n="nav.policies">Policies</a></li>
+      <li><a href="resources.html" data-i18n="nav.resources">Resources</a></li>
+    </ul></nav>
+    <div class="header-actions">
+      <div class="lang-switch" role="navigation" aria-label="Language switcher"><button id="btn-en" aria-pressed="false">EN</button><button id="btn-ar" aria-pressed="false">ع</button></div>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="page-content animate-on-scroll">
+      <h1 data-i18n="contact.page.title">Contact Us | DoraVitta LLC</h1>
+      <p class="page-lead" data-i18n="contact.page.lead">Questions about a service or ready to book? Contact our team and we’ll be glad to help.</p>
+      <div class="detail-grid">
+        <article class="detail-card"><h2 data-i18n="contact.page.inquiries">Inquiries and bookings</h2><p><a href="mailto:info@doravitta.com">info@doravitta.com</a></p><p data-i18n="contact.page.inquiries.note">Email us to discuss a service, arrange a session, or ask a question before booking.</p></article>
+        <article class="detail-card"><h2 data-i18n="contact.page.support">Support</h2><p><a href="mailto:support@doravitta.com">support@doravitta.com</a></p><p data-i18n="contact.page.support.note">For help with an existing booking or other support questions, contact our support team.</p></article>
+        <article class="detail-card"><h2 data-i18n="contact.page.address.title">Registered address</h2><address>DoraVitta LLC<br>30 N Gould St Ste R<br>Sheridan WY 82801 USA</address></article>
+        <article class="detail-card"><h2 data-i18n="contact.page.helpful.title">Helpful information</h2><p data-i18n="contact.page.helpful.body">Sessions are held online. After your booking is confirmed, we send a secure online card-payment link. Please include the service you’re interested in and your preferred times when you email us.</p></article>
+      </div>
+      <p><a href="index.html" data-i18n="page.back">← Back to Home</a></p>
+    </section>
+  </main>
+  <footer><div class="footer-content"><span data-i18n="footer.copyright">© DoraVitta LLC. All Rights Reserved.</span><div class="footer-links"><a href="policies.html" data-i18n="nav.policies">Policies</a><a href="resources.html" data-i18n="nav.resources">Resources</a></div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

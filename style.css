@@ -196,9 +196,34 @@ h2{font-family:var(--font-secondary);font-size:2.2rem;color:var(--calm-gold);mar
 
 /* Services */
 .service-list{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}
-.service-card{background:var(--white);border:1.3px solid var(--pastel-blue);border-radius:12px;padding:1.2rem;width:240px;box-shadow:0 6px 18px rgba(216,234,242,0.08);text-align:left}
+.service-card{background:var(--white);border:1.3px solid var(--pastel-blue);border-radius:12px;padding:1.2rem;width:min(100%,460px);box-shadow:0 6px 18px rgba(216,234,242,0.08);text-align:left}
 .service-card h3{color:var(--calm-gold);font-family:var(--font-secondary);margin-bottom:.6rem}
 .service-card p{color:#333}
+
+/* Service and information pages */
+.page-content{max-width:1100px}
+.page-content h1{text-align:center;color:var(--calm-gold);font-family:var(--font-secondary);font-size:2.3rem}
+.page-lead,.section-intro{max-width:760px;margin:0 auto 1.5rem;text-align:center;color:var(--muted);font-size:1.08rem}
+.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:2rem 0}
+.detail-card,.policy-card,.resource-group{background:var(--white);border:1px solid var(--pastel-blue);border-radius:12px;padding:1.25rem;box-shadow:0 6px 18px rgba(216,234,242,0.08)}
+.detail-card h2,.policy-card h2,.resource-group h2{font-size:1.45rem;text-align:start;margin:.1rem 0 .75rem}
+.detail-card p,.policy-card p,.detail-card li{line-height:1.65}
+.detail-card ol{padding-inline-start:1.5rem}
+.notice{margin:1.5rem 0;padding:1rem 1.25rem;background:#fff8e6;border-inline-start:4px solid var(--calm-gold);border-radius:8px}
+.notice p{margin-bottom:0;line-height:1.6}
+.booking-cta{text-align:center;margin:2rem 0}
+.policy-list{display:grid;gap:1rem}
+.policy-note{margin:1.5rem 0;color:var(--muted);font-size:.95rem}
+.resource-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:2rem 0}
+.resource-card{display:flex;align-items:flex-start;gap:1rem;padding:1rem;border:1px solid #e7e1d3;border-radius:10px;background:var(--soft-beige)}
+.resource-card h3{margin:.15rem 0 .5rem}
+.resource-card p{margin:.25rem 0 .75rem}
+.download-icon{flex:none;display:grid;place-items:center;width:2.5rem;height:2.5rem;border-radius:50%;background:var(--calm-gold);color:#fff;font-size:1.4rem;font-weight:700}
+.language-badge{display:inline-block;padding:.2rem .55rem;border-radius:1rem;background:var(--pastel-blue);color:#23404a;font-size:.8rem;font-weight:700}
+address{font-style:normal;line-height:1.7}
+.footer-links{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+.footer-links a{color:var(--calm-gold);text-decoration:none;font-weight:600}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #526c79;outline-offset:3px}
 
 /* Portfolio */
 .portfolio-list{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}
@@ -235,6 +260,8 @@ footer{background:var(--white);padding:1.2rem 1.2rem;text-align:center;box-shado
 [dir="rtl"] .carousel-btn.prev{right:10px; left:auto}
 [dir="rtl"] .carousel-btn.next{left:10px; right:auto}
 [dir="rtl"] .cta-button{direction:rtl}
+[dir="rtl"] .page-content{text-align:right}
+[dir="rtl"] .notice{border-inline-start:0;border-inline-end:4px solid var(--calm-gold)}
 
 /* Mobile */
 @media (max-width:1000px){
@@ -244,6 +271,7 @@ footer{background:var(--white);padding:1.2rem 1.2rem;text-align:center;box-shado
 }
 @media (max-width:750px){
   nav ul{position:absolute;top:56px;right:8px;background:var(--white);flex-direction:column;gap:.8rem;padding:.8rem;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.06);display:none;width:190px}
+  [dir="rtl"] nav ul{right:auto;left:8px}
   nav ul.active{display:flex}
   .nav-toggle{display:block}
   .logo-img{width:100px;max-height:48px}
@@ -251,6 +279,8 @@ footer{background:var(--white);padding:1.2rem 1.2rem;text-align:center;box-shado
   .slide-inner{padding:1.2rem}
   .about-grid{grid-template-columns:1fr}
   .service-list{flex-direction:column;align-items:stretch}
+  .detail-grid,.resource-groups{grid-template-columns:1fr}
+  .page-content h1{font-size:1.8rem}
 }
 @media(max-width:420px){
   .slide-title{font-size:1.4rem}
