@@ -3,41 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
   <title>DoraVitta LLC</title>
-
-  <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="logo.jpg">
   <link rel="apple-touch-icon" href="logo.jpg">
   <meta name="theme-color" content="#CBB682">
-
-  <!-- Arabic font fallback -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="logo">
-      <a href="#hero" aria-label="DoraVitta home">
+      <a href="index.html#hero" aria-label="DoraVitta home">
         <img src="logo.jpg" alt="DoraVitta logo" class="logo-img">
       </a>
     </div>
-
     <nav id="nav" aria-label="Main navigation">
       <ul id="nav-list">
-        <li><a href="#hero" data-i18n="nav.home">Home</a></li>
-        <li><a href="#about" data-i18n="nav.about">About</a></li>
-        <li><a href="#services" data-i18n="nav.services">Services</a></li>
-        <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
-        <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
-        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-        <!-- <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li> -->
+        <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
+        <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+        <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="policies.html" data-i18n="nav.policies">Policies</a></li>
+        <li><a href="resources.html" data-i18n="nav.resources">Resources</a></li>
       </ul>
     </nav>
-
     <div class="header-actions">
       <div class="lang-switch" role="navigation" aria-label="Language switcher">
         <button id="btn-en" aria-pressed="false">EN</button>
@@ -48,35 +37,29 @@
   </header>
 
   <main>
-    <!-- HERO / CAROUSEL -->
     <section id="hero" class="hero">
       <div class="carousel" id="heroCarousel" aria-roledescription="carousel">
         <div class="slides" role="list">
           <div class="slide" role="listitem" data-index="0" aria-hidden="false">
             <div class="slide-inner">
-              <h1 class="slide-title" data-i18n="hero.1.title">Empowering Your Success</h1>
-              <p class="slide-sub" data-i18n="hero.1.sub">Clarity, strategy and warmth — bespoke consultancy for leaders and founders.</p>
-              <a class="cta-button" href="#contact" data-i18n="hero.1.cta">Get Started</a>
+              <h1 class="slide-title" data-i18n="hero.1.title">Guidance for Your Next Step</h1>
+              <p class="slide-sub" data-i18n="hero.1.sub">Personalized university consultations and practical employee coaching.</p>
+              <a class="cta-button" href="contact.html" data-i18n="hero.1.cta">Get in Touch</a>
             </div>
           </div>
-
           <div class="slide" role="listitem" data-index="1" aria-hidden="true">
             <div class="slide-inner">
-              <h1 class="slide-title" data-i18n="hero.2.title">Strategic Business Growth</h1>
-              <p class="slide-sub" data-i18n="hero.2.sub">We design growth paths rooted in insight — sustainable, measurable and realistic.</p>
-              <a class="cta-button" href="#services" data-i18n="hero.2.cta">Our Services</a>
+              <h1 class="slide-title" data-i18n="hero.2.title">Plan with Confidence</h1>
+              <p class="slide-sub" data-i18n="hero.2.sub">Clear, realistic steps for university applications and workplace goals.</p>
+              <a class="cta-button" href="#services" data-i18n="hero.2.cta">Explore Services</a>
             </div>
           </div>
-
           <div class="slide" role="listitem" data-index="2" aria-hidden="true">
             <div class="slide-inner">
-              <h1 class="slide-title" data-i18n="hero.3.title">Developing Leaders & Teams</h1>
-              <p class="slide-sub" data-i18n="hero.3.sub">Workshops and coaching that build confidence, alignment and impact.</p>
-              <a class="cta-button" href="#portfolio" data-i18n="hero.3.cta">View Portfolio</a>
+              <h1 class="slide-title" data-i18n="hero.3.title">Support That Moves You Forward</h1>
+              <p class="slide-sub" data-i18n="hero.3.sub">Online sessions shaped around your goals and practical next steps.</p>
             </div>
           </div>
-
-          <!-- LOGO SLIDE -->
           <div class="slide slide-logo-wrap" role="listitem" data-index="3" aria-hidden="true">
             <div class="slide-inner slide-logo-inner" aria-hidden="false">
               <img src="logo.jpg" alt="DoraVitta logo" class="slide-logo">
@@ -84,73 +67,64 @@
             </div>
           </div>
         </div>
-
         <button class="carousel-btn prev" aria-label="Previous slide" onclick="prevSlide()">‹</button>
         <button class="carousel-btn next" aria-label="Next slide" onclick="nextSlide()">›</button>
-
         <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Slide dots"></div>
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="about animate-on-scroll">
       <h2 data-i18n="about.title">About DoraVitta</h2>
-      <p data-i18n="about.lead">
-        DoraVitta partners with entrepreneurs and teams to find clarity and craft actionable strategy.
-        We combine market insight with human-centred coaching so decisions are better informed and teams move forward confidently.
-      </p>
+      <p data-i18n="about.lead">DoraVitta offers practical guidance for students planning their university journey and employees building confidence and motivation at work.</p>
     </section>
 
-    <!-- SERVICES -->
     <section id="services" class="services animate-on-scroll">
       <h2 data-i18n="services.title">Our Services</h2>
       <div class="service-list">
-        <!-- 1. University consultations -->
-        <div class="service-card">
+        <article class="service-card">
           <h3 data-i18n="services.university.title">University Consultations</h3>
-          <p data-i18n="services.university.body">Include your university advisor in these sessions.</p>
-          <p><a href="university.html" data-i18n="services.learnmore">Learn more →</a></p>
-        </div>
-
-        <!-- 2. Employee counseling  commented---->
-        <div class="service-card">
-          <h3>Employee Wellbeing & Coaching</h3>
-          <p data-i18n="services.employee.body">Support for employee wellbeing and recovery.</p>
-          <p><a href="employee.html" data-i18n="services.learnmore">Learn more →</a></p>
-        </div>
-
-        <!-- 3. Healthy life -->
-        <!--<div class="service-card">
-          <h3 data-i18n="services.healthy.title">Healthy Living — Exercise & Nutrition</h3>
-          <p data-i18n="services.healthy.body">Free for now — content will be added when the file is available.</p>
-          <p><a href="healthy.html" data-i18n="services.learnmore">Learn more →</a></p>
-        </div>-->
+          <p data-i18n="services.university.body">One-to-one online sessions to help students and families choose universities and majors, understand admissions requirements, and build a realistic application plan.</p>
+          <p><strong data-i18n="services.university.audience">For high school students, university students, and parents.</strong></p>
+          <p data-i18n="services.university.price">45 minutes · $15 per session</p>
+          <p><a href="university.html" data-i18n="services.learnmore">Full details and booking →</a></p>
+        </article>
+        <article class="service-card">
+          <h3 data-i18n="services.employee.title">Employee Coaching &amp; Motivation</h3>
+          <p data-i18n="services.employee.body">Practical coaching to build confidence, motivation, and habits for handling work pressure through goal setting and communication.</p>
+          <p><strong data-i18n="services.employee.audience">For individual employees and teams.</strong></p>
+          <p data-i18n="services.employee.price">Individual: $55 for 45 minutes · Team pricing on request</p>
+          <p><a href="employee.html" data-i18n="services.learnmore">Full details and booking →</a></p>
+        </article>
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="contact animate-on-scroll">
       <h2 data-i18n="contact.title">Contact Us</h2>
+      <p class="section-intro" data-i18n="contact.home.intro">For inquiries or bookings, email info@doravitta.com.</p>
       <form>
         <input id="input-name" type="text" placeholder="Your Name" required data-i18n-placeholder="contact.form.name">
         <input id="input-email" type="email" placeholder="Your Email" required data-i18n-placeholder="contact.form.email">
         <textarea id="input-message" placeholder="How can we help you?" required data-i18n-placeholder="contact.form.message"></textarea>
-        <button id="contact-submit" type="button" data-i18n="contact.form.submit">Send Message</button>
+        <button id="contact-submit" type="button" data-i18n="contact.form.submit">Email Us</button>
       </form>
+      <p class="section-intro"><a href="contact.html" data-i18n="contact.page.link">Contact details and helpful information →</a></p>
     </section>
   </main>
 
   <footer>
     <div class="footer-content">
-      <span>&copy; <span id="year"></span> <span data-i18n="footer.brand">DoraVitta LLC</span></span>
+      <span data-i18n="footer.copyright">© DoraVitta LLC. All Rights Reserved.</span>
+      <div class="footer-links">
+        <a href="policies.html" data-i18n="nav.policies">Policies</a>
+        <a href="resources.html" data-i18n="nav.resources">Resources</a>
+      </div>
       <div class="social-links">
-        <a id="linkedin-link" href="https://www.linkedin.com/in/dora-vitta-251382397?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a id="twitter-link" href="https://x.com/dora_vitta?s=11" target="_blank" rel="noopener noreferrer">X / Twitter</a>
-        <a id="instagram-link" href="https://www.instagram.com/dora_vitta?igsh=MWZla3AxMGY4Mjlxbg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.linkedin.com/in/dora-vitta-251382397?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://x.com/dora_vitta?s=11" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+        <a href="https://www.instagram.com/dora_vitta?igsh=MWZla3AxMGY4Mjlxbg%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

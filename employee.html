@@ -1,106 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-  <title>Employee Wellbeing &amp; Coaching — DoraVitta</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title data-i18n="employee.page.title">Employee Coaching &amp; Motivation | DoraVitta LLC</title>
   <link rel="icon" type="image/jpeg" href="logo.jpg">
   <meta name="theme-color" content="#CBB682">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="logo">
-      <a href="index.html" aria-label="DoraVitta home">
-        <img src="logo.jpg" alt="DoraVitta logo" class="logo-img">
-      </a>
-    </div>
-
-    <nav id="nav" aria-label="Main navigation">
-      <ul id="nav-list">
-        <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
-        <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
-        <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
-      </ul>
-    </nav>
-
+    <div class="logo"><a href="index.html#hero" aria-label="DoraVitta home"><img src="logo.jpg" alt="DoraVitta logo" class="logo-img"></a></div>
+    <nav id="nav" aria-label="Main navigation"><ul id="nav-list">
+      <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
+      <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+      <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      <li><a href="policies.html" data-i18n="nav.policies">Policies</a></li>
+      <li><a href="resources.html" data-i18n="nav.resources">Resources</a></li>
+    </ul></nav>
     <div class="header-actions">
-      <div class="lang-switch" role="navigation" aria-label="Language switcher">
-        <button id="btn-en" aria-pressed="false">EN</button>
-        <button id="btn-ar" aria-pressed="false">ع</button>
-      </div>
+      <div class="lang-switch" role="navigation" aria-label="Language switcher"><button id="btn-en" aria-pressed="false">EN</button><button id="btn-ar" aria-pressed="false">ع</button></div>
       <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
     </div>
   </header>
-
   <main>
-    <section class="animate-on-scroll" style="max-width:980px;margin:2rem auto;padding:1rem;">
-      <h1 id="employee-title">Employee Wellbeing &amp; Coaching</h1>
-      <p id="employee-lead">Support for employee wellbeing, recovery and coaching.</p>
-
-      <h2 id="employee-heading">Service overview</h2>
-      <p id="employee-p1">Our Employee Wellbeing &amp; Coaching programmes provide confidential support for stress, burnout, workplace challenges and personal difficulties. Sessions combine practical coaching with appropriate referrals when specialist support is needed.</p>
-
-      <h2 id="employee-heading-2">How we work</h2>
-      <p id="employee-p2">We provide confidential, practical support. Managers can make referrals, or employees can contact us directly. Each programme is tailored to the employee’s needs and the organisation’s goals.</p>
-
-      <p style="margin-top:1.4rem"><a href="index.html" id="employee-back">← Back to Home</a></p>
+    <section class="page-content animate-on-scroll">
+      <h1 data-i18n="employee.page.title">Employee Coaching &amp; Motivation | DoraVitta LLC</h1>
+      <p class="page-lead" data-i18n="employee.page.lead">Practical coaching sessions to build confidence, motivation, and useful habits for handling work pressure.</p>
+      <div class="detail-grid">
+        <article class="detail-card"><h2 data-i18n="employee.what.title">What sessions cover</h2><p data-i18n="employee.what.body">We focus on goal setting, communication, motivation, confidence, and practical habits that help with workplace pressure.</p></article>
+        <article class="detail-card"><h2 data-i18n="employee.audience.title">Who it’s for</h2><p data-i18n="employee.audience.body">Individual employees looking for practical support, and teams seeking a shared coaching and motivation plan.</p></article>
+        <article class="detail-card"><h2 data-i18n="employee.how.title">How it works</h2><ol>
+          <li data-i18n="employee.how.1">Contact us at info@doravitta.com to discuss your needs.</li>
+          <li data-i18n="employee.how.2">Agree on a session plan and confirm a schedule.</li>
+          <li data-i18n="employee.how.3">Meet online for the agreed coaching sessions.</li>
+        </ol></article>
+        <article class="detail-card"><h2 data-i18n="employee.price.title">Pricing and payment</h2><p data-i18n="employee.price.body">Individual session: $55 for 45 minutes. Team pricing is available on request. Secure online card payment; your payment link is sent after booking.</p></article>
+      </div>
+      <aside class="notice"><strong data-i18n="employee.notice.title">Important notice</strong><p data-i18n="employee.notice.body">This service provides coaching and motivational support only. It is not medical care, psychotherapy, or a substitute for care from a licensed health professional.</p></aside>
+      <p class="booking-cta"><a class="cta-button" href="mailto:info@doravitta.com" data-i18n="employee.book">Discuss your needs: info@doravitta.com</a></p>
+      <p><a href="index.html" data-i18n="page.back">← Back to Home</a></p>
     </section>
   </main>
-
-  <footer>
-    <div class="footer-content">
-      <span>&copy; <span id="year"></span> <span data-i18n="footer.brand">DoraVitta LLC</span></span>
-    </div>
-  </footer>
-
-  <script src="script.js?v=2"></script>
-  <script>
-    // Keep this page's updated wording independent of an older cached translation map.
-    (function () {
-      const content = {
-        en: {
-          title: 'Employee Wellbeing & Coaching',
-          lead: 'Support for employee wellbeing, recovery and coaching.',
-          heading: 'Service overview',
-          p1: 'Our Employee Wellbeing & Coaching programmes provide confidential support for stress, burnout, workplace challenges and personal difficulties. Sessions combine practical coaching with appropriate referrals when specialist support is needed.',
-          heading2: 'How we work',
-          p2: 'We provide confidential, practical support. Managers can make referrals, or employees can contact us directly. Each programme is tailored to the employee’s needs and the organisation’s goals.',
-          back: '← Back to Home'
-        },
-        ar: {
-          title: 'رفاهية الموظفين والتدريب — DoraVitta',
-          lead: 'دعم لرفاهية الموظفين والتعافي والتدريب.',
-          heading: 'نظرة عامة على الخدمة',
-          p1: 'تقدم برامج رفاهية الموظفين والتدريب لدينا دعماً سرياً للتعامل مع الإجهاد والإرهاق وتحديات العمل والصعوبات الشخصية، مع إحالة الحالات إلى المختصين عند الحاجة.',
-          heading2: 'كيفية العمل معنا',
-          p2: 'نقدم دعماً عملياً وسرياً. يمكن للمديرين إحالة الحالات، كما يمكن للموظفين التواصل معنا مباشرة. نخصص كل برنامج وفق احتياجات الموظف وأهداف المؤسسة.',
-          back: '← العودة إلى الصفحة الرئيسية'
-        }
-      };
-      function updateEmployeePage() {
-        const lang = document.documentElement.lang === 'ar' ? 'ar' : 'en';
-        const text = content[lang];
-        document.title = text.title;
-        Object.entries({
-          'employee-title': text.title,
-          'employee-lead': text.lead,
-          'employee-heading': text.heading,
-          'employee-p1': text.p1,
-          'employee-heading-2': text.heading2,
-          'employee-p2': text.p2,
-          'employee-back': text.back
-        }).forEach(([id, value]) => { document.getElementById(id).textContent = value; });
-      }
-      updateEmployeePage();
-      document.getElementById('btn-en')?.addEventListener('click', () => setTimeout(updateEmployeePage, 0));
-      document.getElementById('btn-ar')?.addEventListener('click', () => setTimeout(updateEmployeePage, 0));
-    }());
-  </script>
+  <footer><div class="footer-content"><span data-i18n="footer.copyright">© DoraVitta LLC. All Rights Reserved.</span><div class="footer-links"><a href="policies.html" data-i18n="nav.policies">Policies</a><a href="resources.html" data-i18n="nav.resources">Resources</a></div></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
