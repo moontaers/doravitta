@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title data-i18n="contact.page.title">Contact Us — DoraVitta LLC</title>
+
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <link rel="apple-touch-icon" href="logo.jpg">
+  <meta name="theme-color" content="#CBB682">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html" aria-label="DoraVitta home">
+        <img src="logo.jpg" alt="DoraVitta logo" class="logo-img">
+      </a>
+    </div>
+
+    <nav id="nav" aria-label="Main navigation">
+      <ul id="nav-list">
+        <li><a href="index.html#hero" data-i18n="nav.home">Home</a></li>
+        <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+        <li><a href="index.html#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="policies.html" data-i18n="nav.policies">Policies</a></li>
+        <li><a href="resources.html" data-i18n="nav.resources">Resources</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" role="navigation" aria-label="Language switcher">
+        <button id="btn-en" aria-pressed="false">EN</button>
+        <button id="btn-ar" aria-pressed="false">ع</button>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main class="contact-page">
+    <section id="contact-full" class="contact-full animate-on-scroll">
+      <h1 data-i18n="contact.page.title">Contact Us</h1>
+      <p class="lead" data-i18n="contact.intro">We'd love to hear from you. Whether you're looking for a university consultation or employee coaching and motivation, the DoraVitta team is here to help.</p>
+
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h2 data-i18n="contact.inquiries">Inquiries & Session Bookings</h2>
+          <p><a href="mailto:info@doravitta.com">info@doravitta.com</a></p>
+        </div>
+
+        <div class="contact-block">
+          <h2 data-i18n="contact.support">Support & Follow-up</h2>
+          <p><a href="mailto:support@doravitta.com">support@doravitta.com</a></p>
+        </div>
+
+        <div class="contact-block">
+          <h2 data-i18n="contact.address">Registered Address</h2>
+          <p>
+            <strong data-i18n="contact.company">DoraVitta LLC</strong><br>
+            30 N Gould St, Ste R<br>
+            Sheridan, WY 82801, USA
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-info-section">
+        <h2 data-i18n="contact.helpful">Helpful Information</h2>
+        <ul>
+          <li data-i18n="contact.note1">All sessions are delivered online.</li>
+          <li data-i18n="contact.note2">After your booking is confirmed, you'll receive a card payment link.</li>
+          <li data-i18n="contact.note3">The address above is our registered business address; we don't receive visitors there.</li>
+        </ul>
+      </div>
+
+      <div class="contact-form-section">
+        <h2 data-i18n="contact.title">Send us a Message</h2>
+        <form>
+          <input id="input-name" type="text" placeholder="Your Name" required data-i18n-placeholder="contact.form.name">
+          <input id="input-email" type="email" placeholder="Your Email" required data-i18n-placeholder="contact.form.email">
+          <textarea id="input-message" placeholder="How can we help you?" required data-i18n-placeholder="contact.form.message"></textarea>
+          <button id="contact-submit" type="button" data-i18n="contact.form.submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <span>&copy; <span data-i18n="footer.copyright">DoraVitta LLC. All Rights Reserved.</span></span>
+      <div class="social-links">
+        <a id="linkedin-link" href="https://www.linkedin.com/in/dora-vitta-251382397?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a id="twitter-link" href="https://x.com/dora_vitta?s=11" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+        <a id="instagram-link" href="https://www.instagram.com/dora_vitta?igsh=MWZla3AxMGY4Mjlxbg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
