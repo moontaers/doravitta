@@ -253,6 +253,8 @@ footer{background:var(--white);padding:2rem 1.5rem;text-align:center;box-shadow:
 
 /* Standalone pages and card grids */
 .contact-full,.policies,.resources,.page-content{max-width:1100px;margin:0 auto;padding:4rem 1.5rem}
+/* Service pages: align text with the active language direction (dir set on <html> by script.js) */
+.page-content,.page-content :is(h1,h2,h3,h4,p,li,label){text-align:start}
 .contact-full>.lead,.resources>.lead{max-width:720px;margin:0 auto 2rem;text-align:center;font-size:1.15rem;color:#4b4b4b}
 .contact-grid,.resources-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin:2rem 0}
 .contact-block,.resource-card{background:var(--white);border:1px solid rgba(216,234,242,.9);border-radius:12px;padding:1.5rem;box-shadow:0 6px 18px rgba(216,234,242,.12)}
