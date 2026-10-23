@@ -224,6 +224,11 @@
       if(map[key]) el.setAttribute('aria-label', map[key]);
     });
 
+    // point legal download links at the PDF matching the language
+    $all('a[download][href^="Doravitta-Legal-Policies-"]').forEach(el => {
+      el.setAttribute('href', lang === 'ar' ? 'Doravitta-Legal-Policies-AR-v3.pdf' : 'Doravitta-Legal-Policies-EN-v2.pdf');
+    });
+
     // update aria-pressed for language buttons
     const btnEn = document.getElementById('btn-en');
     const btnAr = document.getElementById('btn-ar');
